@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto con Javascript</title>
+    <!--MIS ESTILOS-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link id="theme" rel="stylesheet" href="css/green.css">
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="js/jq-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jq-ui/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="js/jq-ui/jquery-ui.theme.min.css">
+    <script src="js/jq-ui/jquery-ui.min.js"></script>
+    <!--VALIDATION-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    <!--MIS SCRIPTS-->
+    <script src="js/main-js.js"></script>
+</head>
+
+<body>
+    <div id="selector-theme">
+        <div id="to-green"></div>
+        <div id="to-red"></div>
+        <div id="to-blue"></div>
+
+    </div>
+    <section id="global">
+        <!--CABECERA-->
+        <header>
+            <div id="logo">
+                <h1>Proy. Mitzy</h1>
+            </div>
+            <!--esto es importante :c-->
+            <div class="clearfix"></div>
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="reloj.html">RELOJ</a></li>
+                    <li><a href="about.html">SOBRE MI</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--CONTENIDO-->
+        <section id="content">
+            <div id="box">
+                <!--AQUI SE CARGARAN el acordeon DESDE UN JSON EN MAIN.JS-->
+                <h2>Contacto</h2>
+                <form action="" method="POST" id="form-contact">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="" data-validation="alphanumeric">
+                    <label for="surname">Apellidos</label>
+                    <input type="text" name="surname" id="" data-validation="alphanumeric">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="" data-validation="email">
+                    <label for="sex">Sexo</label>
+                    <select name="sex" id="" data-validation="required">
+                        <option value="men">Hombre</option>
+                        <option value="woman">Mujer</option>
+                    </select>
+                    <label for="date">Fecha de Nacimiento</label>
+                    <input type="text" name="date" id="" data-validation="date" data-validation-format="dd-mm-yyyy">
+                    <label for="edad">Edad</label>
+                    <input type="number" name="edad" id="" data-validation="number">
+                    <input type="submit" value="enviar">
+                </form>
+            </div>
+            <aside id="sidebar">
+                <div id="about">
+                    <h4><span>¿Quien soy?</span></h4>
+                    <img src="img/caracol.jpg" alt="caracol">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a dictum mi, id mollis diam. Donec volutpat sapien non turpis rutrum consequat non sed lorem. Vestibulum at felis eleifend odio mollis mattis ut vel lacus. Quisque blandit vel mauris id
+                        dapibus.
+                    </p>
+                </div>
+                <div id="login">
+                    <h4><span>Identificate</span></h4>
+                    <form action="">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="form_name">
+                        <label for="name">Correo</label>
+                        <input type="email" name="email" id="form_email">
+                        <label for="name">Contraseña</label>
+                        <input type="password" name="password" id="form_password">
+                        <input type="submit" value="Entrar">
+                    </form>
+                </div>
+            </aside>
+            <!--esto es importante :c-->
+            <div class="clearfix"></div>
+        </section>
+    </section>
+    <footer>
+        Curso de JS Mitzy Díaz
+        <a href="#" class="subir">Ir Arriba</a>
+    </footer>
+</body>
+
+</html>
